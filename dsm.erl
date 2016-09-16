@@ -1,5 +1,5 @@
 -module(dsm).
--export([dsm/0,dsm2/1,add/2]).
+-export([dsm/0,dsm2/1,add/2,hello/0]).
 
     dsm() -> io:fwrite("Eric's DSM Quiz\n").
     
@@ -8,4 +8,7 @@
     dsm2(0) -> io:fwrite("Wow, you got a zero!"). 
     
 add(A,B) -> A+B.
+hello() ->
+    io:format("Hello, world!~n").
+
 
